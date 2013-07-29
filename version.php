@@ -29,7 +29,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$module->version   = 2013071900.00;
-$module->requires  = 2010031900;      // Requires this Moodle version
+$module->version   = 2013071900;
+$module->requires  = 2013051401.02;      // Requires this Moodle version
 $module->cron      = 0;               // Period for cron to check this module (secs)
 $module->component = 'mod_linkbazaar';// To check on upgrade, that module sits in correct place
+$module->maturity  = MATURITY_ALPHA;
