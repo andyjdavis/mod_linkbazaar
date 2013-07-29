@@ -74,11 +74,11 @@ function linkbazaar_add_instance(stdClass $newmodule, mod_linkbazaar_mod_form $m
  * @param mod_linkbazaar_mod_form $mform
  * @return boolean Success/Fail
  */
-function linkbazaar_update_instance(stdClass $linkbazaar, mod_newmodule_mod_form $mform = null) {
+function linkbazaar_update_instance(stdClass $linkbazaar, mod_linkbazaar_mod_form $mform = null) {
     global $DB;
 
     $linkbazaar->timemodified = time();
-    $linkbazaar->id = $newmodule->instance;
+    $linkbazaar->id = $linkbazaar->instance;
 
     return $DB->update_record('linkbazaar', $linkbazaar);
 }

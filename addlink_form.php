@@ -55,7 +55,7 @@ class linkbazaar_link_form extends moodleform {
 
         //----------------------------------------------------------------------
         $mform->addGroup(array(
-            $mform->createElement('submit', 'submit', get_string('addstampbutton', 'stampcoll')),
+            $mform->createElement('submit', 'submit', get_string('addlink', 'linkbazaar')),
             ), 'controlbuttons', '&nbsp;', array(' '), false);
 
         //----------------------------------------------------------------------
